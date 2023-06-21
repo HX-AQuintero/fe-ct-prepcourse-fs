@@ -126,4 +126,85 @@
 
 // console.log(diaSemana('Lunes'));
 
-console.log('hola');
+// console.log('hola');
+
+// var comidas = ['Pizza', 'Hamburguesa', 'Pastas', 'Lasagna'];
+
+// var hola = "hola123"
+// comidas.push('Sandwich', 'Empanada', 4, "hola", "hola", hola, [1,2,3]);
+
+// comidas.pop();
+// comidas.pop();
+// comidas.pop();
+
+// comidas[1] = 'Platano';
+
+// comidas.unshift('buñuelo', 'pan', 'milanesa');
+// console.log(comidas);
+
+// var autos = ["Ford", "Chevrolet", "Toyota", "Tesla"];
+
+// //callback
+// function mostrarNombres(elemento) {
+    // console.log(elemento);
+//    }
+
+// autos.forEach(mostrarNombres);
+
+//  console.log(autos);
+
+// var numeros = [2, 3, 4, 5];
+
+// function multi(elemento) {
+//   return elemento * 3;
+// }
+
+// console.log(numeros.map(multi)); //aqui hay un arreglo
+
+
+// numeros.map(function (elemento) {
+//   return elemento * 3;
+// });
+
+
+// console.log(triple[1]);
+
+// var numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// function sumatoria (acc, elemento) {
+//   return acc + elemento;
+// }
+
+// var suma = numeros.reduce(sumatoria)
+
+// console.log(suma);
+
+
+function saludo(nombre, apellido){
+	console.log(arguments) // 
+}
+
+saludo(1,2,3,4,5) //--> 120
+
+
+// function agregarItemAlFinalDelArray(array, elemento) {
+//     // Agrega el "elemento" al final del arreglo recibido.
+//     // Retorna el arreglo.
+//     // Tu código:
+//     return array.push(elemento);
+//  }
+
+//  console.log(agregarItemAlFinalDelArray([1,2],5));
+// [1,2,5] --> 3 total elementos
+//  console.log(agregarItemAlFinalDelArray([1,2,3,4],8));
+// [1,2,3,4,8] --> 5 total elementos
+
+// function agregarItemAlComienzoDelArray(array, elemento) {
+//     // Agrega el "elemento" al comienzo del arreglo recibido.
+//     // Retorna el arreglo.
+//     // Tu código:
+//     return array.unshift(elemento);
+//  }
+
+//  console.log(agregarItemAlComienzoDelArray([1,2,3], 4))
+// // [4,1,2,3] --> 4 total elementos
