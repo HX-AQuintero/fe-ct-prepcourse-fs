@@ -180,11 +180,11 @@
 // console.log(suma);
 
 
-function saludo(nombre, apellido){
-	console.log(arguments) // 
-}
+// function saludo(nombre, apellido){
+// 	console.log(arguments) // 
+// }
 
-saludo(1,2,3,4,5) //--> 120
+// saludo(1,2,3,4,5) //--> 120
 
 
 // function agregarItemAlFinalDelArray(array, elemento) {
@@ -208,3 +208,76 @@ saludo(1,2,3,4,5) //--> 120
 
 //  console.log(agregarItemAlComienzoDelArray([1,2,3], 4))
 // // [4,1,2,3] --> 4 total elementos
+
+
+//OBJETOS
+
+var usuario = {
+    nombre: "Alejo",
+    password: "hola123",
+    edad: 26,
+    online: true,
+    amigos: ['Maria', 'jose', 'Luis']
+};
+
+
+//dot notation
+// console.log(usuario.nombre);
+// console.log(usuario.edad);
+
+//bracket notation
+// console.log(usuario["amigos"]);
+// console.log(usuario["online"]);
+
+//asignar y modificar
+
+usuario.pais = "Colombia";
+usuario["identificacion"] = 235323542356;
+usuario["telefono"] = 23452352345;
+
+usuario.pais = "Argentina";
+usuario["pais"] = "Uruguay";
+
+var profesion = "Developer";
+
+usuario.profesion = profesion;
+usuario["profesion"] = profesion;
+
+usuario[profesion] = profesion;
+
+usuario["5hola123"] = true;
+
+usuario["5hola123"] = false;
+
+//eliminar
+
+delete usuario["5hola123"];
+
+delete usuario.telefono;
+
+var pais = "Bolivia";
+
+
+// console.log(usuario.decirHola("Lucas"));
+
+// console.log(usuario.hasOwnProperty("pais"));
+
+// console.log(Object.values(usuario));
+
+// console.log(usuario.amigos.push("Joel"));
+// console.log(usuario);
+
+//bucle for...in
+
+// for(var clave in usuario) {
+//     console.log(usuario[clave]);
+// }
+
+
+//this
+
+// usuario.decirHola = function() {
+//     return "Hola! " + this.nombre + "tienes " + this.edad;
+// }
+
+// console.log(usuario.decirHola());
