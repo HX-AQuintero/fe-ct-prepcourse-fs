@@ -212,13 +212,13 @@
 
 //OBJETOS
 
-var usuario = {
-    nombre: "Alejo",
-    password: "hola123",
-    edad: 26,
-    online: true,
-    amigos: ['Maria', 'jose', 'Luis']
-};
+// var usuario = {
+//     nombre: "Alejo",
+//     password: "hola123",
+//     edad: 26,
+//     online: true,
+//     amigos: ['Maria', 'jose', 'Luis']
+// };
 
 
 //dot notation
@@ -231,31 +231,31 @@ var usuario = {
 
 //asignar y modificar
 
-usuario.pais = "Colombia";
-usuario["identificacion"] = 235323542356;
-usuario["telefono"] = 23452352345;
+// usuario.pais = "Colombia";
+// usuario["identificacion"] = 235323542356;
+// usuario["telefono"] = 23452352345;
 
-usuario.pais = "Argentina";
-usuario["pais"] = "Uruguay";
+// usuario.pais = "Argentina";
+// usuario["pais"] = "Uruguay";
 
-var profesion = "Developer";
+// var profesion = "Developer";
 
-usuario.profesion = profesion;
-usuario["profesion"] = profesion;
+// usuario.profesion = profesion;
+// usuario["profesion"] = profesion;
 
-usuario[profesion] = profesion;
+// usuario[profesion] = profesion;
 
-usuario["5hola123"] = true;
+// usuario["5hola123"] = true;
 
-usuario["5hola123"] = false;
+// usuario["5hola123"] = false;
 
-//eliminar
+// //eliminar
 
-delete usuario["5hola123"];
+// delete usuario["5hola123"];
 
-delete usuario.telefono;
+// delete usuario.telefono;
 
-var pais = "Bolivia";
+// var pais = "Bolivia";
 
 
 // console.log(usuario.decirHola("Lucas"));
@@ -281,3 +281,76 @@ var pais = "Bolivia";
 // }
 
 // console.log(usuario.decirHola());
+
+
+//CLASES
+//funciones constructoras
+// function Gato(nombre, edad, dueno) {
+//     this.nombre = nombre;
+//     this.edad = edad;
+//     this.dueno = dueno;
+//     this.maullar = function() {
+//         return "Mi nombre es " + this.nombre + "...Meow!"
+//     }
+// }
+//clase
+// class Gato {
+//     constructor(nombre, edad, dueno) {
+//         this.nombre = nombre;
+//         this.edad = edad;
+//         this.dueno = dueno;
+//         this.maullar = function () {
+//             return "Mi nombre es " + this.nombre + "...Meow!";
+//         };
+//     }
+// }
+
+// //prototype
+// Gato.prototype.decirEdad = function () {
+//     return this.edad;
+// }
+
+// Gato.prototype.color = function(color) {
+//     this.color = color;
+// };
+
+//instancia de clase
+// var gato1 = new Gato("michi", 10, "Alejo");
+// // var gato2 = new Gato("canela", 3);
+
+// // console.log(gato1.maullar());
+
+// // console.log(gato1.decirEdad());
+// console.log(gato1.color("negro"));
+
+// console.log(gato1);
+
+
+//herencia
+class Animal {
+    constructor(nombre, raza, filum) {
+        this.nombre = nombre;
+        this.raza = raza;
+        this.filum = filum;
+    }
+}
+
+class Perro extends Animal {
+    constructor(nombre, raza, color) {
+        super(nombre);
+        this.nombre = nombre;
+        this.raza = raza;
+        this.color = color;
+    }
+    ladrar() {
+        console.log("guau!");
+    }
+}
+
+var perrito1 = new Perro("Firulais", "Dalmata", "blanco");
+console.log(perrito1);
+
+perrito1.ladrar();
+
+// var animal1 = new Animal("firulais");
+
